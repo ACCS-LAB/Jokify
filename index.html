@@ -2,19 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jokify - Legal Pages</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jokify - Prank App</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(135deg, #ffe600, #ffc107);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      animation: bounce 2s infinite;
+    }
+    .button {
+      margin: 15px;
+      padding: 15px 30px;
+      background: #fff;
+      border: 2px solid #333;
+      border-radius: 50px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    .button:hover {
+      background: #333;
+      color: #fff;
+      transform: scale(1.1);
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>🤣 Jokify Legal Center</h1>
-    <p>Your AI-Powered Prank Studio 📸</p>
-
-    <div class="buttons">
-      <a class="btn" href="privacy.html">📜 Privacy Policy</a>
-      <a class="btn" href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">📄 Terms of Use</a>
-    </div>
-  </div>
+  <h1>Welcome to Jokify 🎉</h1>
+  <p>Your ultimate prank photo app!</p>
+  <a class="button" href="privacy.html">Privacy Policy</a>
+  <a class="button" href="terms.html">Terms of Use</a>
 </body>
 </html>
