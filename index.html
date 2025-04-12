@@ -14,16 +14,17 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      height: 100vh;
-      overflow: hidden;
+      justify-content: flex-start;
+      min-height: 100vh;
       text-align: center;
       background-size: 400% 400%;
       animation: gradientBG 10s ease infinite;
+      padding: 20px;
     }
     h1 {
       font-size: 3rem;
       animation: bounce 2s infinite;
+      margin-top: 50px;
     }
     p {
       font-size: 16px;
@@ -31,7 +32,8 @@
       margin-bottom: 30px;
     }
     .button {
-      margin: 15px;
+      display: inline-block;
+      margin: 10px;
       padding: 15px 30px;
       background: #fff;
       border: 2px solid #333;
@@ -56,6 +58,25 @@
       50% {background-position: 100% 50%;}
       100% {background-position: 0% 50%;}
     }
+    .faq {
+      margin-top: 40px;
+      text-align: left;
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .faq h2 {
+      color: #ff9800;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .faq p {
+      margin-bottom: 10px;
+      color: #333;
+      line-height: 1.5;
+    }
     @media (max-width: 600px) {
       h1 {
         font-size: 2rem;
@@ -67,13 +88,26 @@
         padding: 10px 20px;
         font-size: 14px;
       }
+      .faq {
+        padding: 15px;
+      }
     }
   </style>
 </head>
 <body>
   <h1>Welcome to Jokify 🎉</h1>
   <p>Your ultimate prank photo app!</p>
+
   <a class="button" href="privacy.html">Privacy Policy</a>
   <a class="button" href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Terms of Use</a>
+  <a class="button" href="mailto:accslabteam@gmail.com?subject=Support%20Request%20-%20Jokify">Support</a>
+
+  <div class="faq">
+    <h2>Frequently Asked Questions 🤔</h2>
+    <p><strong>Q: Are my photos stored?</strong><br>A: No! Your photos are never stored on our servers.</p>
+    <p><strong>Q: Can I cancel my subscription?</strong><br>A: Yes, anytime via your Apple account settings.</p>
+    <p><strong>Q: How many images can I create?</strong><br>A: Free users can create limited images, premium users get more daily!</p>
+    <p><strong>Q: How can I contact support?</strong><br>A: Use the support button above or email accslabteam@gmail.com ✉️</p>
+  </div>
 </body>
 </html>
