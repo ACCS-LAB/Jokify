@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jokify - Prank App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
+      font-family: 'Comic Neue', cursive;
       background: linear-gradient(135deg, #ffe600, #ffc107);
       color: #333;
       display: flex;
@@ -17,10 +18,17 @@
       height: 100vh;
       overflow: hidden;
       text-align: center;
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
     }
     h1 {
       font-size: 3rem;
       animation: bounce 2s infinite;
+    }
+    p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 30px;
     }
     .button {
       margin: 15px;
@@ -43,12 +51,29 @@
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-15px); }
     }
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 14px;
+      }
+      .button {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
 <body>
-<h1>Welcome to Jokify 🎉</h1>
-<p>Your ultimate prank photo app!</p>
-<a class="button" href="privacy.html">Privacy Policy</a>
-<a class="button" href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Terms of Use</a>
+  <h1>Welcome to Jokify 🎉</h1>
+  <p>Your ultimate prank photo app!</p>
+  <a class="button" href="privacy.html">Privacy Policy</a>
+  <a class="button" href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Terms of Use</a>
 </body>
 </html>
