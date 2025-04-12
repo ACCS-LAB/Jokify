@@ -2,56 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jokify - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jokify - Prank App</title>
   <style>
     body {
-      background: linear-gradient(135deg, #ffea61, #ffc107);
       margin: 0;
-      padding: 0;
       font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(135deg, #ffe600, #ffc107);
+      color: #333;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       height: 100vh;
-      color: #222;
+      overflow: hidden;
       text-align: center;
-      animation: backgroundMove 10s infinite alternate;
     }
-
-    @keyframes backgroundMove {
-      0% { background-position: 0% 50%; }
-      100% { background-position: 100% 50%; }
-    }
-
     h1 {
       font-size: 3rem;
-      margin-bottom: 1rem;
+      animation: bounce 2s infinite;
     }
-
     .button {
-      display: inline-block;
-      padding: 1rem 2rem;
-      margin: 0.5rem;
+      margin: 15px;
+      padding: 15px 30px;
       background: #fff;
-      color: #222;
-      text-decoration: none;
+      border: 2px solid #333;
       border-radius: 50px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-      transition: 0.3s;
+      text-decoration: none;
+      color: #333;
       font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     }
-
     .button:hover {
-      background: #222;
+      background: #333;
       color: #fff;
-      transform: scale(1.05);
+      transform: scale(1.1);
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Jokify! 🎉</h1>
+  <h1>Welcome to Jokify 🎉</h1>
+  <p>Your ultimate prank photo app!</p>
   <a class="button" href="privacy.html">Privacy Policy</a>
   <a class="button" href="terms.html">Terms of Use</a>
 </body>
