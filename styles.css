@@ -1,41 +1,48 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #f9c5d1, #fbc2eb);
-  color: #333;
-  text-align: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terms of Use - Jokify</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: #fff8e1;
+      color: #333;
+      line-height: 1.8;
+    }
+    h1 {
+      color: #ff9800;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    .back {
+      display: inline-block;
+      margin-top: 20px;
+      background: #ffeb3b;
+      color: #333;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .back:hover {
+      background: #fdd835;
+    }
+  </style>
+</head>
+<body>
+  <h1>Terms of Use</h1>
+  <p>For our Terms of Use, please refer to Apple’s official document:</p>
+  <p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Apple Standard EULA</a></p>
 
-.container {
-  padding: 2rem;
-}
-
-h1 {
-  font-size: 2.5rem;
-  color: #ff4081;
-}
-
-p {
-  font-size: 1.2rem;
-  color: #555;
-}
-
-.buttons {
-  margin-top: 2rem;
-}
-
-.btn {
-  display: inline-block;
-  margin: 1rem;
-  padding: 1rem 2rem;
-  background-color: #ff4081;
-  color: white;
-  text-decoration: none;
-  border-radius: 50px;
-  transition: background 0.3s;
-}
-
-.btn:hover {
-  background-color: #e91e63;
-}
+  <a class="back" href="index.html">⬅ Back to Home</a>
+</body>
+</html>
